@@ -1,5 +1,5 @@
 {
     "cslol-dll.dll": "1",
-    "cslol-tools.zip": "1",
+    "cslol-tools.zip": "2",
     "hashes.game.txt": "1"
 }
