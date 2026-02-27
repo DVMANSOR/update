@@ -1,0 +1,5 @@
+{
+    "index.html": "1",
+    "script.js": "1",
+    "style.css": "1"
+}

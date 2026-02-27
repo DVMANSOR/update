@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>League Custom Skins</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <div class="titlebar">
+      <div class="title-left">
+        <div class="app-title">League Custom Skins Engine</div>
+      </div>
+      <div class="window-controls">
+        <div class="win-btn min" onclick="Minimize()"></div>
+        <div class="win-btn max" onclick="Maximize()"></div>
+        <div class="win-btn close" onclick="Close()"></div>
+      </div>
+    </div>
+
+    <div class="tabs">
+      <input type="radio" name="tabs" id="tab-champions" checked />
+      <input type="radio" name="tabs" id="tab-installed"  />
+      <input type="radio" name="tabs" id="tab-engine" />
+
+      <div class="tab-headers" id="tabs">
+        <label for="tab-champions">Champions</label>
+        <label for="tab-installed">Installed</label>
+        <label for="tab-engine">Engine</label>
+        <div class="tab-spacer"><input type="text" id="search" class="search" placeholder="Search Your Champion"></div><p class="toptext" id="toptext">State</p>
+        <button class="sync-btn" onclick="Sync()">Sync</button>
+      </div>
+
+      <div class="tab-panels">
+        <div class="panel champions">
+          <div class="grid" id="grid">
+            <!-- <div class="card"><div class="name">Ahri</div><img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg" alt=""></div>
+            <div class="card"><div class="name">Jinx</div><img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_0.jpg" alt=""></div>
+            <div class="card"><div class="name">Yasuo</div></div>
+            <div class="card"><div class="name">Vi</div></div>
+            <div class="card"><div class="name">Caitlyn</div></div>
+            <div class="card"><div class="name">Zed</div></div> -->
+          </div>
+        </div>
+
+        <div class="panel installed">
+          <div class="grid" id="installedgrid">
+            <!-- <div class="card"><div class="name">Jinx — Arcane</div></div>
+            <div class="card"><div class="name">Vi — Arcane</div></div> -->
+          </div>
+        </div>
+
+        <div class="panel engine">
+          <div class="engine-left">
+            <div class="engine-actions">
+              <button class="btn start" onclick="window.pywebview.api.run_mods_live_incremental();">Start</button>
+              <button class="btn stop" onclick="window.pywebview.api.stop_engine();">Stop</button>
+            </div>
+            <div class="status">
+              <div class="led" id="led"></div>
+              <div id="enginestatus">Engine Status: OFF</div>
+            </div>
+            <div></div>
+          </div>
+          <div class="engine-right">
+            <div class="log-title">Engine Logs</div>
+            <div class="log" id="log">
+              <!-- [INFO] Engine initialized -->
+
+              <!-- <br />[INFO] Waiting for client
+              <br />[OK] Ready -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="app skinslist" id="skinspart">
+    
+    <div class="grid" id="bottomlist">
+      
+                  <!-- <div class="card"><div class="name">Ahri</div><img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg" alt=""></div>
+            <div class="card"><div class="name">Jinx</div><img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_0.jpg" alt=""></div>
+            <div class="card"><div class="name">Yasuo</div></div>
+            <div class="card"><div class="name">Vi</div></div>
+            <div class="card"><div class="name">Caitlyn</div></div>
+            <div class="card"><div class="name">Zed</div></div> -->
+    </div>
+  </div>
+</body>
+</html>
+<script src="./script.js">
+  
+</script>
