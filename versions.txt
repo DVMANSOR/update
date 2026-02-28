@@ -1,7 +1,7 @@
 {
-    "champs.txt": "1",
-    "cslol-tools.zip": "1",
-    "index.html": "1",
-    "script.js": "1",
-    "style.css": "1"
+    "champs.txt": "2",
+    "cslol-tools.zip": "2",
+    "index.html": "2",
+    "script.js": "2",
+    "style.css": "2"
 }
