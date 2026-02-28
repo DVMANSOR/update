@@ -1,6 +1,6 @@
 {
     "champs.txt": "2",
-    "cslol-tools.zip": "3",
+    "cslol-tools.zip": "4",
     "index.html": "2",
     "script.js": "2",
     "style.css": "2",
